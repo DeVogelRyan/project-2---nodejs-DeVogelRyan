@@ -1,22 +1,22 @@
 const express = require("express");
-const mongoose = require("mongoose");
 require('dotenv/config')
-const app = express();
 const bodyparser = require('body-parser');
+const cors = require('cors');
+const app = express();
+//import router
+const PostRoute = require('./routes/idea');
+//import db connection
+const dbconnection = require('./db/dbconnection');
 
+
+//setup cors so that other resources can fetch the API
+app.use(cors());
+//This is so the server knows how to handel json requests.
 app.use(bodyparser.json());
 
-//import router
-const PostRoute = require('./routes/posts');
 
-app.use('/posts', PostRoute);
 
-mongoose.connect((process.env.DB_CONNECTION), {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    },
-    () => console.log('Connected to db'));
-
+app.use('/ideas', PostRoute);
 
 
 const PORT = process.env.APP_PORT;
