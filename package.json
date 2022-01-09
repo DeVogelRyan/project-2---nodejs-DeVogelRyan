@@ -22,7 +22,11 @@
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
+    "email-validator": "^2.0.4",
     "express": "^4.17.2",
-    "mongoose": "^6.1.4"
+    "joi": "^17.5.0",
+    "joi-phone-number": "^5.0.1",
+    "mongoose": "^6.1.4",
+    "validate-phone-number-node-js": "^0.0.1"
   }
 }

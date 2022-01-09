@@ -4,7 +4,8 @@ const bodyparser = require('body-parser');
 const cors = require('cors');
 const app = express();
 //import router
-const PostRoute = require('./routes/idea');
+const IdeaRoute = require('./routes/idea');
+const UserRoute = require('./routes/user');
 //import db connection
 const dbconnection = require('./db/dbconnection');
 
@@ -16,7 +17,9 @@ app.use(bodyparser.json());
 
 
 
-app.use('/ideas', PostRoute);
+app.use('/ideas', IdeaRoute);
+
+app.use('/users', UserRoute);
 
 
 const PORT = process.env.APP_PORT;
