@@ -57,5 +57,10 @@ users
 (This requires the whole body - made in postman)
 
 
+## Sources:
+* https://www.w3resource.com/mongodb/mongodb-skip-limit.php
+* 
+
+
 
 
