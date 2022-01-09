@@ -12,7 +12,7 @@ users
 ## Endpoints
 
 ### Idea:
-*(Get) localhost:3000/ideas = get all the ideas
+* (Get) localhost:3000/ideas = get all the ideas
 
 *(Get) localhost:3000/ideas/:ideaID = get a specific idea with an ID
 
