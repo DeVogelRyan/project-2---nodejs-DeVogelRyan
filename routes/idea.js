@@ -63,12 +63,6 @@ Router.get('/:ideaID', async (req, res) => { //Get idea by ID
 });
 
 
-// } else {
-//     res.json({
-//         message: "no items found with that ID!"
-//     })
-// }
-
 Router.post('/', validateTypeIdea, async (req, res) => { //Post a new idea
     const idea = new Idea({
         idea: req.body.idea,
@@ -85,8 +79,6 @@ Router.post('/', validateTypeIdea, async (req, res) => { //Post a new idea
 
 });
 
-
-
 Router.delete('/:ideaID', async (req, res) => { //Delete an idea
     try {
         const removeidea = await Idea.deleteOne({
@@ -100,7 +92,7 @@ Router.delete('/:ideaID', async (req, res) => { //Delete an idea
     }
 });
 
-Router.put('/:ideaID', async (req, res) => { //Update an idea
+Router.put('/:ideaID', validateTypeIdea, async (req, res) => { //Update an idea
     try {
         const updateidea = await Idea.updateOne({
             _id: req.params.ideaID

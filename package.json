@@ -24,8 +24,6 @@
     "dotenv": "^10.0.0",
     "email-validator": "^2.0.4",
     "express": "^4.17.2",
-    "joi": "^17.5.0",
-    "joi-phone-number": "^5.0.1",
     "mongoose": "^6.1.4",
     "validate-phone-number-node-js": "^0.0.1"
   }

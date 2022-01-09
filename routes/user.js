@@ -23,7 +23,7 @@ Router.get('/', async (req, res) => { //Get all Users
     }
 });
 
-Router.get('/email', async (req, res) => { //Get User by ID
+Router.get('/email', async (req, res) => { //Get User by email
     try {
         console.log(req.query.UserEmail)
         User.findOne({
@@ -131,8 +131,9 @@ Router.put('/:UserID', async (req, res) => { //Update an User
             _id: req.params.UserID
         }, {
             $set: {
-                User: req.body.User,
-                for: req.body.for
+                username: req.body.username,
+                email: req.body.email,
+                phoneNumber: req.body.phoneNumber,
             }
         })
         res.json(updateUser);
