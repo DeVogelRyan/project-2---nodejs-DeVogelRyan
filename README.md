@@ -20,12 +20,16 @@ users
 
 (Post) localhost:3000/ideas = post a new idea
 ![afbeelding](https://user-images.githubusercontent.com/80109984/148687970-75591d27-f347-453a-a145-07aa31f46de4.png)
+
 (This requires the whole body)
+
 
 (Delete) localhost:3000/ideas/:ideaID = remove a specific idea with an ID
 
+
 (Put) localhost:3000/ideas/:ideaID = update a specific idea with an ID
 ![afbeelding](https://user-images.githubusercontent.com/80109984/148688062-5a9be470-3971-4575-b17e-339292a3a7db.png)
+
 (This requires the whole body)
 
 ### User:
