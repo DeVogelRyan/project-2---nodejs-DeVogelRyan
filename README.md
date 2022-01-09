@@ -3,6 +3,9 @@
 ## This project is an API using Node.js and mongoDB.
 There are 2 enpoints to start with namely idea and user.
 The idea is bassicly an idea for a startup and the user are the users that have and email, username, phonenumber...
+Note this API uses an .env file with the following content:
+APP_PORT=...
+DB_CONNECTION=...
 
 ### Entities 
 ideas,
@@ -64,6 +67,7 @@ users
 * https://www.npmjs.com/package/validate-phone-number-node-js
 * https://www.npmjs.com/package/email-validator
 * https://docs.mongodb.com/manual/reference/
+* https://masteringjs.io/tutorials/mongoose/unique
 
 
 
