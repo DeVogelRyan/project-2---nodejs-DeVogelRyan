@@ -8,9 +8,10 @@ The idea is bassicly an idea for a startup and the user are the users that have 
 ideas,
 users
 
-### Endpoints
 
-## Idea:
+## Endpoints
+
+### Idea:
 (Get) localhost:3000/ideas = get all the ideas
 
 (Get) localhost:3000/ideas/specific?offset=1&limit=1 = get the ideas with an offset and a limit
@@ -20,5 +21,5 @@ users
 (Post) localhost:3000/ideas = post a new idea
 
 
-## User:
+### User:
 
