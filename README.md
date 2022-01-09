@@ -59,7 +59,11 @@ users
 
 ## Sources:
 * https://www.w3resource.com/mongodb/mongodb-skip-limit.php
-* 
+* https://www.youtube.com/watch?v=vjf774RKrLc&list=PLljLuOVzRtnisllxYHVa-0AkkqSOzpdqZ&index=20&t=2088s
+* http://ostack.cn/?qa=259390/node-js-check-if-id-exists-in-a-collection-with-mongoose
+* https://www.npmjs.com/package/validate-phone-number-node-js
+* https://www.npmjs.com/package/email-validator
+* https://docs.mongodb.com/manual/reference/
 
 
 
