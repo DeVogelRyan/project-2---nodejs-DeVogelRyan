@@ -52,8 +52,8 @@ users
 * (Delete) localhost:3000/users/:UserID = remove a specific user with an ID
 
 * (Put) localhost:3000/users/:UserID = update a specific user with an ID
-
 ![afbeelding](https://user-images.githubusercontent.com/80109984/148688559-ababf219-a639-4d48-9f0d-daa05a392b4f.png)
+
 (This requires the whole body - made in postman)
 
 
